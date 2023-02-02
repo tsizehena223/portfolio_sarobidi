@@ -28,15 +28,33 @@ function setActiveStyle(color) {
 const dayNight = document.querySelector(".day-night");
 
 dayNight.addEventListener("click", () => {
-    dayNight.querySelector("i").classList.toggle("fa-sun");
     dayNight.querySelector("i").classList.toggle("fa-moon");
-    document.body.classList.toggle("dark");
+    dayNight.querySelector("i").classList.toggle("fa-sun");
+    document.body.classList.toggle("light");
 })
 
 window.addEventListener("load", () => {
-    if (document.body.classList.contains("dark")) {
-        dayNight.querySelector("i").classList.add("fa-sun");
-    } else {
+    if (document.body.classList.contains("light")) {
         dayNight.querySelector("i").classList.add("fa-moon");
+    } else {
+        dayNight.querySelector("i").classList.add("fa-sun");
     }
 })
+
+/* ACTIVE PAGE */
+
+var activePage = document.getElementById("myNav");
+
+// Get all buttons with class="btn" inside the container
+var blas = activePage.getElementsByClassName("bla");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < blas.length; i++) {
+    blas[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
+
+/* */
