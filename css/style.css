@@ -1078,3 +1078,54 @@ h3.my-profession {
         left: 60%;
     }
 }
+
+@media (min-width: 1416px) {
+
+    .home .home-img img {
+        position: relative;
+        margin: auto;
+        border-radius: 15px;
+        height: 350px;
+    }
+
+    .home-img::after {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-bottom: 15px solid var(--skin-color);
+        border-right: 5px solid var(--skin-color);
+        right: 20px;
+        bottom: 0px;
+        border-radius: 10px;
+    }
+
+    .home-img::before {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-top: 15px solid var(--skin-color);
+        border-left: 5px solid var(--skin-color);
+        left: 20px;
+        top: -40px;
+        border-radius: 10px;
+    }
+
+    .home .home-info a {
+        position: relative;
+        left: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .home .home-img {
+        display: none;
+    }
+
+    .home .home-info a {
+        position: relative;
+        left: 0%;
+    }
+}
