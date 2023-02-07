@@ -287,7 +287,7 @@ h3.hello span {
     font-family: 'Itim', cursive;
     font-size: 30px;
     font-weight: 700;
-    color: aqua;
+    color: var(--skin-color);
 }
 
 h3.my-profession {
@@ -682,8 +682,10 @@ h3.my-profession {
         display: none;
     }
 
-    .aside .nav li a i:hover {
-        content: 'bla';
+    .aside .nav li a i {
+        display: flex;
+        position: relative;
+        left: 8px;
     }
 
     /* .aside .nav-toggler {

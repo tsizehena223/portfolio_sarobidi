@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Sarobidi</title>
 
-    <link rel="shortcut icon" href="images/" type="image/x-icon">
+    <link rel="shortcut icon" href="images/Bien.jpg" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <!-- Envoi Email -->
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("kqxGJ7OKuH5Na1Cq-");
+        })();
+    </script>
 </head>
 
 <body>
@@ -82,7 +92,7 @@
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>Je suis <span style="color: aqua">Sarobidi</span> et je suis un
+                                    <h3>Je suis <span>Sarobidi</span> et je suis un
                                         <span>étudiant en Informatique</span>
                                     </h3>
                                     <p></p>
@@ -106,7 +116,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Donwload CV</a>
+                                            <a href="files/cv_sarobidi.pdf" class="btn">Télécharger mon CV</a>
                                             <a href="#contact" class="btn hire-me">Me contacter</a>
                                         </div>
                                     </div>
@@ -250,7 +260,7 @@
                     </div>
                     <div class="row">
                         <div class="project-heading padd-15">
-                            <h2>Mes derniers Projets : </h2>
+                            <h2>Mes derniers Projets : <i>(avec leur lien github)</i></h2>
                         </div>
                     </div>
                     <div class="row">
@@ -258,7 +268,9 @@
                         <div class="project-item padd-15">
                             <div class="project-item-inner shadow-dark">
                                 <div class="project-img">
-                                    <img src="images/projects/omapi.png" alt="">
+                                    <a href="https://github.com/tsizehena223/gestion_biblio_omapi" target="_blank">
+                                        <img src="images/projects/omapi.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +279,9 @@
                         <div class="project-item padd-15">
                             <div class="project-item-inner shadow-dark">
                                 <div class="project-img">
-                                    <img src="images/projects/bdc.png" alt="">
+                                    <a href="https://github.com/tsizehena223/bdc" target="_blank">
+                                        <img src="images/projects/bdc.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +290,9 @@
                         <div class="project-item padd-15">
                             <div class="project-item-inner shadow-dark">
                                 <div class="project-img">
-                                    <img src="images/projects/sellnbuy.png" alt="">
+                                    <a href="https://github.com/tsizehena223/sellnbuy" target="_blank">
+                                        <img src="images/projects/sellnbuy.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +301,9 @@
                         <div class="project-item padd-15">
                             <div class="project-item-inner shadow-dark">
                                 <div class="project-img">
-                                    <img src="images/projects/portfolio.png" alt="">
+                                    <a href="https://github.com/tsizehena223/portfolio_sarobidi" target="_blank">
+                                        <img src="images/projects/portfolio.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -309,14 +327,14 @@
                         <!-- Contact Info item start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Me On</h4>
+                            <h4>Appelez moi sur</h4>
                             <p>+261 32 75 025 39</p>
                         </div>
                         <!-- Contact Info item end -->
                         <!-- Contact Info item start -->
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Adress</h4>
+                            <h4>Adresse</h4>
                             <p>Lot II M 45 ABC Androhibe</p>
                         </div>
                         <!-- Contact Info item end -->
@@ -343,32 +361,33 @@
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" id="name" class="form-control" placeholder="Nom">
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" id="email" class="form-control" placeholder="Email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" id="subject" class="form-control" placeholder="Objet">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea id="" class="form-control" placeholder="Message"></textarea>
+                                        <textarea id="message" class="form-control" placeholder="Message"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Envoyer</button>
+                                    <button type="submit" class="btn" style="cursor:pointer"
+                                        onclick="sendMail()">Envoyer</button>
                                 </div>
                             </div>
                         </div>
