@@ -7,12 +7,12 @@ var typed = new Typed(".typing", {
 })
 
 /* STILL WORKING */
-var typed = new Typed(".typing_working", {
-    strings: ["", "Je travaille encore sur les soft-skills"],
-    typeSpeed: 100,
-    BackSpeed: 60,
-    loop: true
-})
+// var typed = new Typed(".typing_working", {
+//     strings: ["", "Je travaille encore sur les soft-skills"],
+//     typeSpeed: 100,
+//     BackSpeed: 60,
+//     loop: true
+// })
 
 /* CHANGEMENT DE NAV WHILE SCROLING */
 //Global Variables

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Comfortaa:wght@300&family=Itim&family=Poppins:wght@200;400;500;600&display=swap');
 
 body.light {
-    --bg-black-900: #f2f2fc;
+    --bg-black-900: #e7e7f0;
     --bg-black-100: #fdf9ff;
-    --bg-black-50: #e8dfec;
+    --bg-black-50: #aa9cb1;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
@@ -89,7 +89,7 @@ ul {
     content: '';
     height: 4px;
     width: 80px;
-    background-color: var(--skin-color);
+    background-color: var(--skin-color2);
     position: absolute;
     top: 100%;
     left: 0;
@@ -98,7 +98,7 @@ ul {
 .section-title h2::after {
     content: '';
     height: 4px;
-    width: 50px;
+    width: 40px;
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
@@ -123,7 +123,7 @@ ul {
     display: inline-block;
     white-space: nowrap;
     border: none;
-    background: var(--skin-color);
+    background: var(--skin-color2);
     transition: all 0.3s ease;
 }
 
@@ -170,20 +170,27 @@ ul {
 .aside .logo a span {
     font-family: 'Clicker Script', cursive;
     font-size: 40px;
+    color: var(--skin-color2);
+}
+
+.aside .logo a span i{
+    font-family: 'Clicker Script', cursive;
+    font-size: px;
+    color: var(--skin-color2);
 }
 
 .aside .logo a::before {
     content: '';
     position: absolute;
-    width: 100px;
-    height: 40px;
+    width: 120px;
+    height: 0px;
     border-bottom: 5px solid var(--skin-color);
     border-left: 5px solid var(--skin-color);
     bottom: 0;
-    left: 0;
+    left: 53px;
 }
 
-.aside .logo a::after {
+/* .aside .logo a::after {
     content: '';
     position: absolute;
     width: 100px;
@@ -192,7 +199,7 @@ ul {
     border-right: 5px solid var(--skin-color);
     top: 0;
     right: 0;
-}
+} */
 
 .aside .nav-toggler {
     height: 40px;
@@ -256,7 +263,7 @@ ul {
 }
 
 .aside .nav li a.active {
-    color: var(--skin-color);
+    color: var(--skin-color2);
 }
 
 .aside .nav li a i {
@@ -298,7 +305,7 @@ h3.my-profession {
 }
 
 .typing {
-    color: var(--skin-color);
+    color: var(--skin-color2);
 }
 
 .home-info p {
@@ -331,8 +338,8 @@ h3.my-profession {
     position: absolute;
     height: 80px;
     width: 80px;
-    border-top: 15px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
+    border-top: 15px solid var(--skin-color2);
+    border-left: 5px solid var(--skin-color2);
     left: 10px;
     top: -40px;
     border-radius: 10px;
@@ -511,7 +518,7 @@ h3.my-profession {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: var(--skin-color);
+    background-color: var(--skin-color2);
 }
 
 .about .about-content .timeline .timeline-date {
@@ -602,7 +609,7 @@ h3.my-profession {
 
 .contact .contact-info-item .icon .fa {
     font-size: 25px;
-    color: var(--skin-color);
+    color: var(--skin-color2);
 }
 
 .contact .contact-info-item h4 {
@@ -727,8 +734,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 40px;
         top: -40px;
         border-radius: 10px;
@@ -780,8 +787,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 40px;
         top: -40px;
         border-radius: 10px;
@@ -819,8 +826,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 40px;
         top: -40px;
         border-radius: 10px;
@@ -862,8 +869,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 40px;
         top: -40px;
         border-radius: 10px;
@@ -911,8 +918,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 20px;
         top: -40px;
         border-radius: 10px;
@@ -950,8 +957,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 0px;
         top: -30px;
         border-radius: 10px;
@@ -990,8 +997,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: -10px;
         top: -40px;
         border-radius: 10px;
@@ -1029,8 +1036,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: -10px;
         top: -30px;
         border-radius: 10px;
@@ -1068,8 +1075,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 20px;
         top: -40px;
         border-radius: 10px;
@@ -1107,8 +1114,8 @@ h3.my-profession {
         position: absolute;
         height: 80px;
         width: 80px;
-        border-top: 15px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
+        border-top: 15px solid var(--skin-color2);
+        border-left: 5px solid var(--skin-color2);
         left: 20px;
         top: -40px;
         border-radius: 10px;

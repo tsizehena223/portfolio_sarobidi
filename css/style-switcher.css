@@ -12,7 +12,8 @@
     transform: translateX(100%);
 }
 
-.style-switcher.open {
+/* open : non */
+.style-switcher.open_aaa {
     transform: translateX(-25px);
 }
 
@@ -38,6 +39,10 @@
 
 .style-switcher .style-switcher-toggler {
     top: 0;
+}
+
+.style-switcher .style-switcher-toggler a {
+    color: var(--text-black-900);
 }
 
 .style-switcher .day-night {
