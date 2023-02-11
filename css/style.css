@@ -173,7 +173,7 @@ ul {
     color: var(--skin-color2);
 }
 
-.aside .logo a span i{
+.aside .logo a span i {
     font-family: 'Clicker Script', cursive;
     font-size: px;
     color: var(--skin-color2);
@@ -601,6 +601,10 @@ h3.my-profession {
     max-width: 25%;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.contact .contact-info-item p a {
+    color: var(--text-black-700);
 }
 
 .contact .contact-info-item .icon {

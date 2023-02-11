@@ -8,7 +8,6 @@ function sendMail() {
         subject: document.getElementById("subject").value,
     };
 
-
     const serviceId = "service_6ioosjb";
     const templateId = "template_0svbuf6";
 
