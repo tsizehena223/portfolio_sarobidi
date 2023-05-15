@@ -9,8 +9,9 @@ body.light {
 }
 
 :root {
-    --bg-black-900: #151515;
-    --bg-black-100: #222222;
+    /* --bg-black-900: #151515; */
+    --bg-black-100: #082838;
+    --bg-black-900: rgb(7, 12, 29);
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
@@ -87,23 +88,15 @@ ul {
 
 .section-title h2::before {
     content: '';
-    height: 4px;
-    width: 80px;
-    background-color: var(--skin-color2);
     position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.section-title h2::after {
-    content: '';
-    height: 4px;
-    width: 40px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
+    width: 14rem;
+    height: 2rem;
+    border-bottom: 7px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color2);
+    border-right: 10px solid var(--skin-color2);
+    border-radius: 100%;
+    top: 5vh;
+    left: -1.2rem;
 }
 
 .row {
